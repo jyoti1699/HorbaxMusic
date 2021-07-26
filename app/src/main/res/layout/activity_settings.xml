@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/r_layout"
+    tools:context=".Settings">
+
+    <TextView
+        android:background="#faf6d3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="@font/abeezee"
+        android:paddingLeft="10dp"
+        android:paddingTop="13dp"
+        android:text="Settings"
+        android:textSize="25dp"
+        android:textColor="#370d59"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="120dp"
+        android:text="Shake feature :"
+        android:checked="false"
+        android:textOff="@string/app_name"
+        android:textOn="ON"/>
+</RelativeLayout>

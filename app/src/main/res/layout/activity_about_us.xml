@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs"
+    android:background="#faf6d3"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="223dp"
+        android:layout_height="216dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/horbaxlogo" />
+
+    <TextView
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textColor="#370d59"
+        android:text="Developed by Jyoti Ranjan Rout
+                       \nVersion 1.0.1"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

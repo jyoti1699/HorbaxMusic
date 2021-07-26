@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:orientation="vertical"
+    tools:context=".PlayerActivity">
+
+    <TextView
+        android:background="#faf6d3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="@font/abeezee"
+        android:paddingLeft="10dp"
+        android:paddingTop="13dp"
+        android:text="Now Playing"
+        android:textSize="25dp"
+        android:textColor="#370d59"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/favoff"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="170dp"
+        android:id="@+id/fav"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+     android:layout_marginLeft="60dp"
+        >
+
+        <com.gauravk.audiovisualizer.visualizer.CircleLineVisualizer xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/blob1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:avColor="@color/av_deep_orange"
+            custom:avDensity="0.5"
+            custom:avSpeed="medium"
+            custom:avType="fill" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="Song Name"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:textColor="#000"
+        />
+
+
+
+
+    <SeekBar
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mSeekBarTime"
+        android:layout_below="@id/songName"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/linearlayout"
+        android:layout_below="@+id/mSeekBarTime"
+        android:gravity="center">
+
+
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/previous"
+            android:id="@+id/previous"/>
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/play"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/play"/>
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/next"
+            android:id="@+id/next"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/loop"
+        android:layout_marginTop="15dp"
+     android:layout_marginLeft="165dp"
+        android:src="@drawable/loopon"/>
+
+
+</LinearLayout>
+
